@@ -19,13 +19,39 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>AngelHack</title>
+    
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
+    <div id="root">
+      
+    </div>
+    <div id="videocontent">
+      <div >
+        <button class="button" id="startButton">Start</button>
+        <button class="button" id="resetButton">Reset</button>
+      </div>
+  
+      <div>
+        <video id="video" width="300" height="200" style="border: 1px solid gray"></video>
+      </div>
+      
+      <div id="sourceSelectPanel" style="display:none">
+        <label for="sourceSelect">Change video source:</label>
+        <select id="sourceSelect" style="max-width:400px">
+        </select>
+      </div>
+  
+      <label>Result:</label>
+      <blockquote>
+        <p id="result"></p>
+      </blockquote>
+  
+    </div>
+   
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
